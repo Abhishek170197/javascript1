@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <input type="text" id="nm1" placeholder="enter no 1"> <br>
+    <input type="text" id="nm2" placeholder="enter no 2"> <br>
+    <button onclick="Add_fun()">Add</button>
+    <button onclick="sub_fun()">subtract</button>
+    <button onclick="multi_fun()">multi</button>
+    <button onclick="div_fun()">divide</button> <br>
+
+    value=  <p id="display"></p>
+
+    <script>
+        function Add_fun() {
+            var x =parseInt(document.getElementById("nm1").value);
+            var y = parseInt(document.getElementById("nm2").value);
+            var z =(x+y)
+            document.getElementById("display").innerHTML=z;
+
+            // document.write(z);
+        }
+        function sub_fun(){
+            var x = parseInt(document.getElementById("nm1").value);
+            var y = parseInt(document.getElementById("nm2").value);
+            var z= (x-y);
+            document.getElementById("display").innerHTML=z;
+        }
+        function multi_fun(){
+            var x = parseInt(document.getElementById("nm1").value);
+            var y = parseInt(document.getElementById("nm2").value);
+            var z =(x*y);
+            document.getElementById("display").innerHTML=z;
+        }
+        function div_fun(){
+            var x = parseInt(document.getElementById("nm1").value);
+            var y = parseInt(document.getElementById("nm2").value);
+            var z = (x/y);
+            document.getElementById("display").innerHTML=z;
+        }
+    </script>
+  
+
+</body>
+</html>
